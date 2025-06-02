@@ -1,0 +1,38 @@
+
+Project Summary: K-Means Clustering with PCA on Wine Dataset
+
+Overview:
+This project demonstrates how to apply Principal Component Analysis (PCA) for dimensionality reduction 
+followed by K-Means clustering on the Wine dataset. The dataset is sourced from the UCI Machine Learning 
+Repository and includes chemical properties of wine samples classified into three classes.
+
+Steps Followed:
+
+1. Dataset Preparation:
+   - The Wine dataset was loaded from scikit-learn.
+   - It contains 13 features related to wine chemical analysis and a class label (target).
+   - A CSV file with headers was generated for easier use.
+
+2. Data Preprocessing:
+   - The features were standardized using StandardScaler to ensure each feature contributes equally.
+   
+3. PCA (Principal Component Analysis):
+   - PCA was used to reduce the data to 2 principal components to simplify visualization and improve clustering.
+   - Explained variance ratio was printed to understand the importance of each component.
+
+4. K-Means Clustering:
+   - K-Means algorithm was applied to the PCA-transformed data with 3 clusters.
+   - Clustering performance was evaluated using the silhouette score.
+
+5. Visualization:
+   - A 2D scatter plot was created to visualize the clusters formed by K-Means in the PCA-reduced feature space.
+
+Key Libraries Used:
+- pandas, numpy, matplotlib, sklearn (StandardScaler, PCA, KMeans, silhouette_score)
+
+Outcome:
+- The project successfully shows how PCA improves visualization and can aid clustering.
+- Clusters are visibly distinct in the PCA-reduced space, and the silhouette score helps validate clustering quality.
+
+Use Case:
+- This method is useful in real-world scenarios where data has many features and reducing dimensionality improves interpretability and clustering efficiency.
